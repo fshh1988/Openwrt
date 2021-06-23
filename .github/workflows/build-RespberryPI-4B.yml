@@ -78,7 +78,9 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        mv RespberryPI-4B/RespberryPI-4B.config openwrt/.config        
         cd openwrt
+        ../RespberryPI-4B/enable-aes.sh
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
     - name: SSH connection to Actions
