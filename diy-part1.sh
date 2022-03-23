@@ -17,13 +17,11 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 #Add some packages
-#git clone https://github.com/kuoruan/openwrt-v2ray.git ./package/mypackage/openwrt-v2ray
-#git clone https://github.com/kuoruan/luci-app-v2ray.git -b legacy ./package/mypackage/luci-app-v2ray
-#git clone https://github.com/binge8/luci-app-godproxy.git ./package/mypackage/luci-app-godproxy
-git clone https://github.com/sypopo/luci-theme-atmaterial.git ./package/mypackage/luci-theme-atmaterial
-git clone https://github.com/immortalwrt-collections/openwrt-gowebdav.git ./package/mypackage/openwrt-gowebdav
-
+mkdir -p package/mypackage
 pushd package/mypackage
+
+git clone https://github.com/sypopo/luci-theme-atmaterial
+t clone https://github.com/immortalwrt-collections/openwrt-gowebdav
 
 # Add luci-app-ssr-plus
 #git clone --depth=1 https://github.com/fw876/helloworld
