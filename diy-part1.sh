@@ -18,12 +18,10 @@ sed 's/services", "frp/services", "frpc/g' feeds/luci/applications/luci-app-frpc
 sed '2s/"frp"/"frpc"/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
 
 rm -rf ./feeds/luci/applications/luci-app-unblockmusic
-
+cp -r ../luci-app-unblockneteasemusic-go ./feeds/luci/applications/luci-app-unblockmusic
 #Add some packages
 mkdir -p package/mypackage
 pushd package/mypackage
-
-git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
 
 git clone https://github.com/sypopo/luci-theme-atmaterial
 git clone https://github.com/immortalwrt-collections/openwrt-gowebdav
