@@ -15,8 +15,8 @@
 
 # Fix frpc
 sed 's/services", "frp/services", "frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
-sed '2s/"frp"/"frpc"/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
+sed '2s/frp/frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
 
 rm -rf ./feeds/luci/applications/luci-app-unblockmusic
-cp -r ../luci-app-unblockneteasemusic-go ./feeds/luci/applications/luci-app-unblockmusic
+cp -r ../luci-app-unblockneteasemusic-go ./feeds/luci/applications/luci-app-unblockneteasemusic-go
 ./scripts/feeds install -a
