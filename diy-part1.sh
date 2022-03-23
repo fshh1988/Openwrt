@@ -13,18 +13,20 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
-#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+# Fix frpc
 sed 's/services", "frp/services", "frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
 sed '2s/"frp"/"frpc"/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
 
+rm -rf ./feeds/luci/applications/luci-app-unblockmusic
 
 #Add some packages
 mkdir -p package/mypackage
 pushd package/mypackage
 
+git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic
+
 git clone https://github.com/sypopo/luci-theme-atmaterial
-t clone https://github.com/immortalwrt-collections/openwrt-gowebdav
+git clone https://github.com/immortalwrt-collections/openwrt-gowebdav
 
 # Add luci-app-ssr-plus
 #git clone --depth=1 https://github.com/fw876/helloworld
@@ -33,7 +35,7 @@ t clone https://github.com/immortalwrt-collections/openwrt-gowebdav
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
 # Add luci-app-vssr <M>
-#git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
+#git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb
 #git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
 # Add ServerChan
