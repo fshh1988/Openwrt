@@ -15,6 +15,9 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed 's/services", "frp/services", "frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
+sed '2s/"frp"/"frpc"/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
+
 
 #Add some packages
 mkdir -p package/mypackage
