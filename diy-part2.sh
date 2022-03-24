@@ -14,5 +14,5 @@
 #sed -i 's/192.168.1.1/10.0.0.250/g' package/base-files/files/bin/config_generate
 
 # Fix frpc
-sed 's/services", "frp/services", "frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
-sed '2s/frp/frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
+#sed 's/services", "frp/services", "frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/controller/frp.lua
+#sed '2s/frp/frpc/g' feeds/luci/applications/luci-app-frpc/luasrc/view/frp/frp_status.htm
