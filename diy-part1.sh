@@ -21,7 +21,7 @@ pushd package/mypackage
 
 git clone https://github.com/sypopo/luci-theme-atmaterial
 git clone https://github.com/immortalwrt-collections/openwrt-gowebdav
-git clone https://github.com/rufengsuixing/luci-app-adguardhome
+git clone https://github.com/tty228/luci-app-adguardhome
 
 # Add luci-app-ssr-plus
 #git clone --depth=1 https://github.com/fw876/helloworld
