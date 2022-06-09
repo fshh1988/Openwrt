@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-#sed -i '2s/coolsnowwolf/fshh1988/g' feeds.conf.default
+sed -i '2s/coolsnowwolf/fshh1988/g' feeds.conf.default
 
 
 #Add some packages
