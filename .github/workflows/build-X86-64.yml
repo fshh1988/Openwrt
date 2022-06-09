@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build RespberryPI-4B
+name: Build X86-64
 
 on:
   repository_dispatch:
