@@ -21,7 +21,7 @@ pushd package/mypackage
 
 #git clone https://github.com/sypopo/luci-theme-atmaterial
 #git clone https://github.com/immortalwrt-collections/openwrt-gowebdav
-#git clone https://github.com/tty228/luci-app-adguardhome
+git clone https://github.com/tty228/luci-app-adguardhome
 
 # Add luci-app-ssr-plus
 #git clone --depth=1 https://github.com/fw876/helloworld
@@ -43,9 +43,9 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
 # Add luci-theme-argon
-git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
-rm -rf ../lean/luci-theme-argon
+#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+#git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+#rm -rf ../lean/luci-theme-argon
 
 # Add OpenAppFilter
 #git clone --depth=1 https://github.com/destan19/OpenAppFilter
