@@ -19,9 +19,9 @@
 mkdir -p package/mypackage
 pushd package/mypackage
 
-git clone https://github.com/sypopo/luci-theme-atmaterial
-git clone https://github.com/immortalwrt-collections/openwrt-gowebdav
-git clone https://github.com/tty228/luci-app-adguardhome
+#git clone https://github.com/sypopo/luci-theme-atmaterial
+#git clone https://github.com/immortalwrt-collections/openwrt-gowebdav
+#git clone https://github.com/tty228/luci-app-adguardhome
 
 # Add luci-app-ssr-plus
 #git clone --depth=1 https://github.com/fw876/helloworld
@@ -34,7 +34,7 @@ git clone https://github.com/tty228/luci-app-adguardhome
 #git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
 # Add ServerChan
-git clone --depth=1 https://github.com/tty228/luci-app-serverchan
+#git clone --depth=1 https://github.com/tty228/luci-app-serverchan
 
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
